@@ -1,6 +1,6 @@
 
 <h1>Listing pictures</h1>
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>Title</th>
@@ -10,6 +10,7 @@
   </thead>
 
   <tbody>
+    <div class="container">
     <% @pictures.each do |picture| %>
       <tr>
         <td><%= picture.title %></td>
@@ -21,6 +22,7 @@
         <% end %>
       </tr>
     <% end %>
+   </div>
   </tbody>
 </table>
 
