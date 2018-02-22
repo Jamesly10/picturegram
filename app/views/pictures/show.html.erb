@@ -21,7 +21,10 @@
 
 <div id="comments">
   <%# Expands to render partial: 'comments/comment', collection: @post.comments %>
-  <%= render @picture.comments %>
+  <%#= render @picture.comments %>
+  <% @picture.comments.each do |c| %>
+  <li><%= c.body %>
+  <% end %>
 </div>
 
 <%= render 'comments/new', picture: @picture %>

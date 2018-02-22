@@ -1,5 +1,4 @@
 class CommentsController < ApplicationController
-  class CommentsController < ApplicationController
   before_action :set_picture
 
   def create
@@ -15,5 +14,4 @@ class CommentsController < ApplicationController
     def comments_params
       params.require(:comment).permit(:body)
     end
-end
 end
